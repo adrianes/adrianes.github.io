@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Luis Adrián Espinoza Orozco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f4f6; /* gris muy claro para el fondo de la ventana */
+            color: #333;
+        }
+        .page {
+            background-color: white;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: row;
+        }
+        @media (max-width: 768px) {
+            .page {
+                width: 100%;
+                flex-direction: column;
+                margin: 0;
+                box-shadow: none;
+            }
+            .sidebar {
+                width: 100% !important;
+            }
+            .main-content {
+                width: 100% !important;
+            }
+        }
+        .sidebar {
+            background-color: #2d3748; /* Gris oscuro / Azulado */
+            color: white;
+            width: 32%;
+            padding: 30px 20px;
+            flex-shrink: 0;
+        }
+        .main-content {
+            width: 68%;
+            padding: 40px 30px;
+        }
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h2 {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #2d3748;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+        .sidebar h2 {
+            border-bottom: 1px solid #4a5568;
+            color: #fff;
+            margin-top: 30px;
+            font-size: 1rem;
+        }
+        .sidebar h2:first-child {
+            margin-top: 0;
+        }
+        .job-title {
+            font-weight: 700;
+            color: #2d3748;
+            font-size: 1.05rem;
+        }
+        .company {
+            font-weight: 500;
+            color: #4a5568;
+        }
+        .date {
+            color: #718096;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        .sidebar a {
+            color: #cbd5e0;
+            text-decoration: none;
+        }
+        .sidebar-item {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        ul.job-details {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: #4a5568;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        ul.job-details li {
+            margin-bottom: 5px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #4a5568;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <!-- Sidebar Column (Left) -->
+        <aside class="sidebar">
+            <div class="mb-8">
+                <h1 class="text-2xl font-bold leading-tight mb-2">Luis Adrián<br>Espinoza Orozco</h1>
+                <p class="text-gray-400 text-sm mb-6">Gerente Técnico e Innovador Digital en IA</p>
+                
+                <div class="text-sm space-y-2">
+                    <div class="flex items-start">
+                        <span class="mr-2">📍</span>
+                        <span>Guadalajara, Jalisco</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="mr-2">📱</span>
+                        <span>+52 331 123 2568</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="mr-2">✉️</span>
+                        <a href="mailto:adrianes@gmail.com">adrianes@gmail.com</a>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="mr-2">🔗</span>
+                        <a href="https://linkedin.com/in/adrianespinoza" target="_blank">linkedin.com/in/adrianespinoza</a>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="mr-2">🌐</span>
+                        <a href="https://adrianespinoza.com" target="_blank">adrianespinoza.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Habilidades</h2>
+            <div class="flex flex-wrap mt-3 mb-6">
+                <!-- Mostrando una selección de las habilidades principales para el diseño -->
+                <span class="tag">Agentic AI</span>
+                <span class="tag">Agile</span>
+                <span class="tag">AI Coaching</span>
+                <span class="tag">Angular</span>
+                <span class="tag">AWS</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Python</span>
+                <span class="tag">GraphQL</span>
+                <span class="tag">NextJS</span>
+                <span class="tag">VueJS</span>
+                <span class="tag">SQL / NoSQL</span>
+                <span class="tag">Docker/K8s</span>
+                <span class="tag">UX Design</span>
+            </div>
+
+            <h2>Idiomas</h2>
+            <div class="mt-3 mb-6 text-sm">
+                <p>• Inglés (Profesional)</p>
+                <p>• Español (Nativo)</p>
+            </div>
+
+            <h2>Educación</h2>
+            <div class="mt-3 mb-6 text-sm">
+                <p class="font-bold text-white">Universidad de Colima</p>
+                <p class="italic text-gray-400">08/1998 - 07/2002</p>
+                <p>Ingeniería Técnica en Telemática</p>
+            </div>
+
+            <h2>Certificaciones</h2>
+            <div class="mt-3 mb-6 text-sm space-y-3">
+                <div>
+                    <p class="font-bold text-white">Certificación en IA</p>
+                    <p class="text-xs text-gray-400">Globant - 08/2024</p>
+                </div>
+                <div>
+                    <p class="font-bold text-white">Mentalidad de IA (AI Mindset)</p>
+                    <p class="text-xs text-gray-400">Globant - 05/2024</p>
+                </div>
+                <div>
+                    <p class="font-bold text-white">Líder Certificado</p>
+                    <p class="text-xs text-gray-400">Globant - 03/2022</p>
+                </div>
+            </div>
+
+            <h2>Publicaciones</h2>
+            <div class="mt-3 text-sm">
+                <p class="italic">"El estado actual de la IA: Cómo afecta al desarrollo de software"</p>
+                <p class="text-xs text-gray-400 mt-1">Globant - 04/2023</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Column (Right) -->
+        <main class="main-content">
+            <h2>Experiencia Laboral</h2>
+
+            <!-- GLOBANT -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="job-title">Gerente Técnico (Technical Manager)</h3>
+                    <span class="date">02/2022 - Presente</span>
+                </div>
+                <div class="company mb-2">GLOBANT | Guadalajara, México</div>
+                <ul class="job-details">
+                    <li>Transición al rol de Gerente Técnico liderando un equipo de 48 personas, mejorando la colaboración e identificando nuevas oportunidades en 6 meses.</li>
+                    <li>Participación en la planificación y revisiones de negocio, gestión de personal para nuevos proyectos e inicio de mejoras de productividad con equipos de seguridad.</li>
+                    <li>Finalización de cursos de coaching, implementación de nuevas metodologías en reuniones 1:1 y mentoría a desarrolladores.</li>
+                    <li>Desarrollo de pruebas de concepto para nuevos proyectos, logrando transición a MVP en 3 meses.</li>
+                </ul>
+                
+                <div class="flex justify-between items-baseline mt-4">
+                    <h3 class="job-title text-base">Líder Técnico y Desarrollador Senior</h3>
+                </div>
+                <ul class="job-details mt-1">
+                    <li>Reconocido por clientes por habilidades innovadoras de resolución de problemas.</li>
+                    <li>Gestión de integración front-end/back-end priorizando seguridad y control de versiones.</li>
+                    <li>Liderazgo en capacitación de IA, generando interés en el equipo y la cuenta.</li>
+                </ul>
+            </div>
+
+            <!-- PHOTOSHELTER -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="job-title">Ingeniero Frontend Senior</h3>
+                    <span class="date">08/2021 - 01/2022</span>
+                </div>
+                <div class="company mb-2">PHOTOSHELTER | Guadalajara, México</div>
+                <ul class="job-details">
+                    <li>Mantenimiento del site builder actual (PHP, Polymer), corrección de errores y estilos.</li>
+                    <li>Implementación de nuevas tecnologías (ReactJS/NextJS, Module Federation) para arquitectura de micro-frameworks.</li>
+                    <li>Trabajo en nuevo site builder (VueJS/NuxtJS), implementando temas, componentes y pruebas unitarias.</li>
+                </ul>
+            </div>
+
+            <!-- IBM -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="job-title">Desarrollador Full Stack</h3>
+                    <span class="date">01/2021 - 08/2021</span>
+                </div>
+                <div class="company mb-2">IBM | Guadalajara, México</div>
+                <ul class="job-details">
+                    <li>Gestión de hitos de desarrollo desde el inicio hasta la entrega final.</li>
+                    <li>Consultoría para determinar cargas del sistema y planes de mejora.</li>
+                    <li>Orquestación de despliegues de software a gran escala y corrección de código.</li>
+                </ul>
+            </div>
+
+            <!-- BRIGHTCOVE -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="job-title">Líder de Equipo de Desarrollo Web</h3>
+                    <span class="date">04/2019 - 01/2021</span>
+                </div>
+                <div class="company mb-2">BRIGHTCOVE | Guadalajara, México</div>
+                <ul class="job-details">
+                    <li>Planificación y desarrollo de brightcove.com (React/Gatsby, Contentful), mejorando velocidad al 90%.</li>
+                    <li>Optimización de migración de Ooyala a Brightcove, ahorrando 8 semanas de trabajo al equipo.</li>
+                </ul>
+            </div>
+
+            <!-- OOYALA -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="job-title">Desarrollador Web Senior</h3>
+                    <span class="date">09/2016 - 04/2019</span>
+                </div>
+                <div class="company mb-2">OOYALA | Guadalajara, México</div>
+                <ul class="job-details">
+                    <li>Gestión de sitios corporativos en Drupal. Mejora de carga de página en 43% y Google PageSpeed de 57 a 93.</li>
+                </ul>
+            </div>
+
+            <!-- GBOX -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="job-title">Desarrollador Full Stack</h3>
+                    <span class="date">01/2016 - 09/2016</span>
+                </div>
+                <div class="company mb-2">GBOX | Guadalajara, México</div>
+                <ul class="job-details">
+                    <li>Desarrollo de sitio web corporativo usando Angular, Node.js, MongoDB y AWS.</li>
+                </ul>
+            </div>
+
+            <!-- AGAVE LAB -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="job-title">Desarrollador Full Stack</h3>
+                    <span class="date">03/2015 - 12/2015</span>
+                </div>
+                <div class="company mb-2">AGAVE LAB | Guadalajara, Jalisco</div>
+                <ul class="job-details">
+                    <li><strong>preapprovemeapp.com:</strong> Angular/Symphony, mejorando velocidad de reportes en 87%.</li>
+                    <li><strong>avisora.mx:</strong> Optimización de información geográfica con PostGIS, reduciendo llamadas a API en 34%.</li>
+                </ul>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
