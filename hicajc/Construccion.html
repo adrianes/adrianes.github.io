@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Construcción - HICAJC</title>
+	<link rel="shortcut icon" href="logo.jpg">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.form-label {
+			font-weight: 600;
+			margin-bottom: 5px;
+			display: block;
+			color: var(--text-dark);
+		}
+
+		.form-control {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: var(--radius-md);
+			margin-bottom: 15px;
+			font-family: var(--font-main);
+		}
+
+		.form-control:focus {
+			outline: none;
+			border-color: var(--primary-orange);
+			box-shadow: 0 0 0 2px rgba(255, 99, 71, 0.2);
+		}
+
+		textarea.form-control {
+			min-height: 150px;
+			resize: vertical;
+		}
+
+		.btn-submit {
+			background-color: var(--primary-orange);
+			color: white;
+			border: none;
+			width: 100%;
+			padding: 12px;
+			font-size: 1.1rem;
+			cursor: pointer;
+			border-radius: var(--radius-md);
+			transition: background 0.3s;
+		}
+
+		.btn-submit:hover {
+			background-color: var(--hover-orange);
+		}
+	</style>
+</head>
+
+<body>
+
+	<header class="global-header">
+		<a href="inicio.html"><img src="imagenes/Hicajc.png" alt="HICAJC" class="logo-main"></a>
+		<h1>¡TU ALIADO INMOBILIARIO!</h1>
+	</header>
+
+	<div class="container">
+		<a href="Servicios.html" class="btn-back">
+			<span>&larr;</span> Regresar a Servicios
+		</a>
+
+		<article class="card">
+
+
+			<div class="card-content">
+				<h2 class="card-title text-center mb-4">Servicios de Construcción</h2>
+				<p class="text-center text-muted mb-4">Cuéntanos sobre tu proyecto y lo hacemos realidad.</p>
+
+				<form id="formulario" method="POST" action="#" onsubmit="event.preventDefault();">
+					<div class="split-view" style="gap: 20px;">
+
+						<!-- Columna Izquierda -->
+						<div style="flex: 1;">
+							<label class="form-label">Nombre</label>
+							<input type="text" id="nombre" name="nombre" class="form-control" required
+								autocomplete="off" maxlength="50">
+
+							<div style="display: flex; gap: 10px;">
+								<div style="flex: 1;">
+									<label class="form-label">Teléfono</label>
+									<input type="tel" id="tel1" name="tel1" class="form-control" required maxlength="10"
+										title="10 dígitos" pattern="[0-9]{10}">
+								</div>
+							</div>
+
+							<label class="form-label">Correo Electrónico</label>
+							<input type="email" id="correo" name="correo" class="form-control" required
+								autocomplete="off">
+						</div>
+
+						<!-- Columna Derecha -->
+						<div style="flex: 1;">
+							<label class="form-label">Descripción del Proyecto</label>
+							<textarea id="observacion" name="observacion" class="form-control" maxlength="200" required
+								placeholder="Describe qué quieres construir, remodelar o ampliar..."></textarea>
+						</div>
+					</div>
+
+					<div class="text-center mt-4">
+						<button type="submit" class="btn-submit" onclick="validar()">Solicitar Cotización</button>
+					</div>
+				</form>
+			</div>
+		</article>
+	</div>
+
+	<script>
+		function validar() {
+			console.log("Validando formulario...");
+		}
+	</script>
+
+	<footer class="global-footer">
+		<p>CONTÁCTANOS: <span class="text-orange">3411764140</span> | <span class="text-orange">63416881713</span></p>
+		<div class="footer-socials">
+			<a href="https://www.facebook.com/inmobiliariahicajc/" target="_blank">
+				<img src="imagenes/fb.png" alt="Facebook" class="social-icon">
+			</a>
+			<a href="https://www.instagram.com/inmobiliariahicajc" target="_blank">
+				<img src="imagenes/ig.png" alt="Instagram" class="social-icon">
+			</a>
+			<a href="https://www.tiktok.com/@inmobiliaria.hica?_t=8s1gFPm2daY&_r=1" target="_blank">
+				<img src="imagenes/tk.png" alt="TikTok" class="social-icon">
+			</a>
+			<a href="https://api.whatsapp.com/send?phone=%2B5213411764140&context=ARACdhwqBwrmuj8T5Jm6oICuOKHd8yHNiguzRIVrrh5BGNLfhhMB7T_nmr6B4OIuQyLEqh5cG9qoG6rx9TZ-Jp1a_dtH1QOE4ypZ4ZerfjPZEd4G5QOB66rfltmXEtDYTz8AHbWOpws7Xlhwg5DY6EKEyw&source=FB_Page&app=facebook&entry_point=page_cta"
+				target="_blank">
+				<img src="imagenes/wh.png" alt="WhatsApp" class="social-icon">
+			</a>
+		</div>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comprar Terreno - HICAJC</title>
+  <link rel="shortcut icon" href="logo.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .badge {
+      display: inline-block;
+      padding: 0.25em 0.6em;
+      font-size: 75%;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: 10rem;
+      color: #fff;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .bg-danger {
+      background-color: #dc3545;
+    }
+
+    .bg-success {
+      background-color: #198754;
+    }
+
+    .filter-bar {
+      margin-bottom: 20px;
+      text-align: right;
+    }
+
+    .form-select {
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="global-header">
+    <a href="inicio.html"><img src="imagenes/Hicajc.png" alt="HICAJC" class="logo-main"></a>
+    <h1>¡TU ALIADO INMOBILIARIO!</h1>
+  </header>
+
+  <div class="container">
+    <a href="Comprar.html" class="btn-back">
+      <span>&larr;</span> Regresar a Comprar
+    </a>
+
+    <header class="home-header" style="padding-top: 0; margin-bottom: 20px;">
+      <h2 class="text-center text-orange">Terrenos Disponibles</h2>
+    </header>
+
+    <div class="filter-bar">
+      <select id="filtro" onchange="filtrarTerrenos()" class="form-select">
+        <option value="todos">Todos</option>
+        <option value="venta">Disponibles</option>
+        <option value="vendido">Vendidos</option>
+      </select>
+    </div>
+
+    <div class="grid-menu" id="terrenos-grid">
+
+      <!-- La Alborada -->
+      <div class="card-link item-terreno venta">
+        <article class="card">
+
+          <div style="position: relative;">
+            <img src="imagenes/lotesAlborada.jpg" class="card-image">
+            <span class="badge bg-success">En Venta</span>
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Terreno La Alborada</h2>
+            <p>Superficie: 200 m²</p>
+          </div>
+          <div class="card-action">
+            <a href="LaAlborada.html" class="btn-card-action">Ver Detalles</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- La Ribera -->
+      <div class="card-link item-terreno venta">
+        <article class="card">
+
+          <div style="position: relative;">
+            <img src="imagenes/lotesLaRibera.jpg" class="card-image">
+            <span class="badge bg-success">En Venta</span>
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Terreno La Ribera</h2>
+            <p>Superficie: 185 m²</p>
+          </div>
+          <div class="card-action">
+            <a href="LaRibera.html" class="btn-card-action">Ver Detalles</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- La Alborada 2 -->
+      <div class="card-link item-terreno venta">
+        <article class="card">
+
+          <div style="position: relative;">
+            <img src="imagenes/lotesAlborada2.jpg" class="card-image">
+            <span class="badge bg-success">En Venta</span>
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Terreno La Alborada 2</h2>
+            <p>Superficie: 250 m²</p>
+          </div>
+          <div class="card-action">
+            <a href="LaAlborada2.html" class="btn-card-action">Ver Detalles</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Vendido 1 -->
+      <div class="card-link item-terreno vendido">
+        <article class="card" style="opacity: 0.8;">
+
+          <div style="position: relative;">
+            <img src="imagenes/terreno1.jpg" class="card-image" style="filter: grayscale(100%);">
+            <span class="badge bg-danger">Vendido</span>
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Terreno Campestre</h2>
+            <p>Superficie: 250 m²</p>
+          </div>
+          <div class="card-action">
+            <span class="btn-card-action">No Disponible</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Vendido 2 -->
+      <div class="card-link item-terreno vendido">
+        <article class="card" style="opacity: 0.8;">
+
+          <div style="position: relative;">
+            <img src="imagenes/terreno2.png" class="card-image" style="filter: grayscale(100%);">
+            <span class="badge bg-danger">Vendido</span>
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Terreno Campestre</h2>
+            <p>Superficie: 250 m²</p>
+          </div>
+          <div class="card-action">
+            <span class="btn-card-action">No Disponible</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Vendido 3 -->
+      <div class="card-link item-terreno vendido">
+        <article class="card" style="opacity: 0.8;">
+
+          <div style="position: relative;">
+            <img src="imagenes/terreno3.webp" class="card-image" style="filter: grayscale(100%);">
+            <span class="badge bg-danger">Vendido</span>
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Terreno Campestre</h2>
+            <p>Superficie: 250 m²</p>
+          </div>
+          <div class="card-action">
+            <span class="btn-card-action">No Disponible</span>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function filtrarTerrenos() {
+      const filtro = document.getElementById('filtro').value;
+      const items = document.querySelectorAll('.item-terreno');
+
+      items.forEach(item => {
+        if (filtro === 'todos') {
+          item.style.display = 'block';
+        } else {
+          if (item.classList.contains(filtro)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        }
+      });
+    }
+  </script>
+
+  <footer class="global-footer">
+    <p>CONTÁCTANOS: <span class="text-orange">3411764140</span> | <span class="text-orange">63416881713</span></p>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/inmobiliariahicajc/" target="_blank">
+        <img src="imagenes/fb.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/inmobiliariahicajc" target="_blank">
+        <img src="imagenes/ig.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://www.tiktok.com/@inmobiliaria.hica?_t=8s1gFPm2daY&_r=1" target="_blank">
+        <img src="imagenes/tk.png" alt="TikTok" class="social-icon">
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=%2B5213411764140&context=ARACdhwqBwrmuj8T5Jm6oICuOKHd8yHNiguzRIVrrh5BGNLfhhMB7T_nmr6B4OIuQyLEqh5cG9qoG6rx9TZ-Jp1a_dtH1QOE4ypZ4ZerfjPZEd4G5QOB66rfltmXEtDYTz8AHbWOpws7Xlhwg5DY6EKEyw&source=FB_Page&app=facebook&entry_point=page_cta"
+        target="_blank">
+        <img src="imagenes/wh.png" alt="WhatsApp" class="social-icon">
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

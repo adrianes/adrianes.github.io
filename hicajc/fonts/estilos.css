@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Eagle';
+  src: url('EAGLE-BOOK.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Eagle', sans-serif;
+  /*font-size: 50px;*/
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Alborada 2 - HICAJC</title>
+    <link rel="shortcut icon" href="logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="global-header">
+        <a href="inicio.html"><img src="imagenes/Hicajc.png" alt="HICAJC" class="logo-main"></a>
+        <h1>¡TU ALIADO INMOBILIARIO!</h1>
+    </header>
+
+    <div class="container">
+        <a href="Desarrollos.html" class="btn-back">
+            <span>&larr;</span> Regresar a Desarrollos
+        </a>
+
+        <article class="card">
+
+
+            <div class="card-content">
+                <h1 class="card-title text-center" style="font-size: 2rem; margin-bottom: 1rem;">LA ALBORADA 2</h1>
+
+                <div class="split-view">
+                    <!-- Map -->
+                    <div style="min-height: 300px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2958.6922790642298!2d-103.4783403260492!3d19.719964631443517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCALLE%20APOLO%20S%2FN%2C%20ESQUINA%20CALLE%20INSURGENTES!5e1!3m2!1ses!2smx!4v1736625220595!5m2!1ses!2smx"
+                            width="100%" height="100%" style="border:0; min-height: 300px; border-radius: 8px;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <!-- Image -->
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <img src="imagenes/lotesAlborada2.jpg" alt="Lotes Alborada 2" class="card-image-full"
+                            style="cursor: pointer; border-radius: 8px;" onclick="openFullscreen(this)">
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <ul class="list-checks" style="display: inline-block; text-align: left;">
+                        <li>Lotes desde $3,300 m².</li>
+                        <li>Enganche de $50,000.</li>
+                        <li>Financiamiento de hasta 24 meses.</li>
+                        <li>Seguridad y confianza.</li>
+                    </ul>
+                </div>
+
+                <div class="text-center mt-4 mb-4">
+                    <a href="https://wa.link/19wpzx" target="_blank" class="btn-whatsapp">
+                        <span>📩</span> Me interesa
+                    </a>
+                </div>
+
+            </div>
+        </article>
+    </div>
+
+    <!-- Fullscreen Overlay -->
+    <div class="fullscreen-overlay" id="fullscreen" onclick="closeFullscreen()">
+        <span class="close-fs">&times;</span>
+        <img id="fullscreen-img" src="" alt="Fullscreen">
+    </div>
+
+    <footer class="global-footer">
+        <p>CONTÁCTANOS: <span class="text-orange">3411764140</span> | <span class="text-orange">63416881713</span></p>
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/inmobiliariahicajc/" target="_blank">
+                <img src="imagenes/fb.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/inmobiliariahicajc" target="_blank">
+                <img src="imagenes/ig.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.tiktok.com/@inmobiliaria.hica?_t=8s1gFPm2daY&_r=1" target="_blank">
+                <img src="imagenes/tk.png" alt="TikTok" class="social-icon">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=%2B5213411764140&context=ARACdhwqBwrmuj8T5Jm6oICuOKHd8yHNiguzRIVrrh5BGNLfhhMB7T_nmr6B4OIuQyLEqh5cG9qoG6rx9TZ-Jp1a_dtH1QOE4ypZ4ZerfjPZEd4G5QOB66rfltmXEtDYTz8AHbWOpws7Xlhwg5DY6EKEyw&source=FB_Page&app=facebook&entry_point=page_cta"
+                target="_blank">
+                <img src="imagenes/wh.png" alt="WhatsApp" class="social-icon">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function openFullscreen(img) {
+            document.getElementById("fullscreen-img").src = img.src;
+            document.getElementById("fullscreen").style.display = "flex";
+        }
+
+        function closeFullscreen() {
+            document.getElementById("fullscreen").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
